@@ -13,7 +13,7 @@ export default async function LatestInvoices() {
     locale: [zh_CN],
   });
 
-  const generateRandomData = (invoices) => {
+  const generateRandomData = (invoices: any[]) => {
     return invoices.map((invoice) => ({
       ...invoice,
       name: faker.person.fullName({ locale: "zh_CN" }),
