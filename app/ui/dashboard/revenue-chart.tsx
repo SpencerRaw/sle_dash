@@ -10,7 +10,7 @@ import { fetchRevenue } from "@/app/lib/data";
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
-const monthMap = {
+const monthMap: Record<string, string> = {
   Jan: "一月",
   Feb: "二月",
   Mar: "三月",
