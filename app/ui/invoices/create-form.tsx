@@ -241,14 +241,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                     </div>
                   ))}
                 </div>
-                <div id="symptom-error" aria-live="polite" aria-atomic="true">
-                  {state.errors?.symptoms &&
-                    state.errors.symptoms.map((error: string) => (
-                      <p className="mt-2 text-sm text-red-500" key={error}>
-                        {error}
-                      </p>
-                    ))}
-                </div>
               </fieldset>
             </div>
 
@@ -290,18 +282,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                       </label>
                     </div>
                   ))}
-                </div>
-                <div
-                  id="clinical-symptoms-error"
-                  aria-live="polite"
-                  aria-atomic="true"
-                >
-                  {state.errors?.clinicalSymptoms &&
-                    state.errors.clinicalSymptoms.map((error: string) => (
-                      <p className="mt-2 text-sm text-red-500" key={error}>
-                        {error}
-                      </p>
-                    ))}
                 </div>
               </fieldset>
             </div>
@@ -515,18 +495,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                     </div>
                   ))}
                 </div>
-                <div
-                  id="thoracic-imaging-tests-error"
-                  aria-live="polite"
-                  aria-atomic="true"
-                >
-                  {state.errors?.thoracicImagingTests &&
-                    state.errors.thoracicImagingTests.map((error: string) => (
-                      <p className="mt-2 text-sm text-red-500" key={error}>
-                        {error}
-                      </p>
-                    ))}
-                </div>
               </fieldset>
             </div>
 
@@ -560,18 +528,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                     </div>
                   ))}
                 </div>
-                <div
-                  id="abdominal-imaging-tests-error"
-                  aria-live="polite"
-                  aria-atomic="true"
-                >
-                  {state.errors?.abdominalImagingTests &&
-                    state.errors.abdominalImagingTests.map((error: string) => (
-                      <p className="mt-2 text-sm text-red-500" key={error}>
-                        {error}
-                      </p>
-                    ))}
-                </div>
               </fieldset>
             </div>
 
@@ -604,20 +560,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                       </label>
                     </div>
                   ))}
-                </div>
-                <div
-                  id="cervical-vascular-imaging-tests-error"
-                  aria-live="polite"
-                  aria-atomic="true"
-                >
-                  {state.errors?.cervicalVascularImagingTests &&
-                    state.errors.cervicalVascularImagingTests.map(
-                      (error: string) => (
-                        <p className="mt-2 text-sm text-red-500" key={error}>
-                          {error}
-                        </p>
-                      )
-                    )}
                 </div>
               </fieldset>
             </div>
