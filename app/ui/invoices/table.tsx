@@ -17,10 +17,10 @@ export default async function InvoicesTable({
     locale: [zh_CN],
   });
 
-  const generateRandomData = (invoices) => {
-    return invoices.map((invoice) => ({
+  const generateRandomData = (invoices: any[]) => {
+    return invoices.map((invoice: any) => ({
       ...invoice,
-      name: faker.person.fullName({ locale: "zh_CN" }),
+      name: faker.person.fullName(),
       email: faker.number.int({ min: 1, max: 99 }).toString().padStart(2, "0"),
       amount: faker.number.int({ min: 0, max: 99 }),
     }));
