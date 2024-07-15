@@ -16,7 +16,7 @@ export default async function LatestInvoices() {
   const generateRandomData = (invoices: any[]) => {
     return invoices.map((invoice) => ({
       ...invoice,
-      name: faker.person.fullName({ locale: "zh_CN" }),
+      name: faker.person.fullName(),
       email: faker.number.int({ min: 1, max: 99 }).toString().padStart(2, "0"),
       amount: faker.number.int({ min: 0, max: 99 }),
     }));
